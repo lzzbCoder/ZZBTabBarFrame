@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>首页</string>
+		<key>img</key>
+		<string>index</string>
+		<key>selectImg</key>
+		<string>index_hl</string>
+		<key>viewControllerName</key>
+		<string>TestViewController</string>
+		<key>controllerTitle</key>
+		<string>兼职猫</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>最新兼职</string>
+		<key>img</key>
+		<string>latest_parttime</string>
+		<key>selectImg</key>
+		<string>latest_parttime_hl</string>
+		<key>viewControllerName</key>
+		<string>OneVC</string>
+		<key>controllerTitle</key>
+		<string>最新兼职</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>喵</string>
+		<key>img</key>
+		<string>miao</string>
+		<key>selectImg</key>
+		<string>miao_hl</string>
+		<key>viewControllerName</key>
+		<string>TwoVC</string>
+		<key>controllerTitle</key>
+		<string>喵</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>个人中心</string>
+		<key>img</key>
+		<string>personal_center</string>
+		<key>selectImg</key>
+		<string>personal_center_hl</string>
+		<key>viewControllerName</key>
+		<string>ThreeVC</string>
+		<key>controllerTitle</key>
+		<string>个人中心</string>
+	</dict>
+</array>
+</plist>

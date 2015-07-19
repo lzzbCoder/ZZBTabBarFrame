@@ -1,0 +1,18 @@
+//
+//  PCat.pch
+//  PartTimeCat
+//
+//  Created by mac on 15/7/17.
+//  Copyright (c) 2015年 ptcat. All rights reserved.
+//
+
+#ifndef PartTimeCat_PCat_pch
+#define PartTimeCat_PCat_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import "ConstantUtils.h"
+
+#endif
+
+#endif

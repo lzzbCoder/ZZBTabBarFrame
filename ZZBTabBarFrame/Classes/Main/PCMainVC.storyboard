@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="N20-G0-j9K">
+            <objects>
+                <viewController storyboardIdentifier="PCMainVC" id="agL-Ke-BDV" customClass="PCMainVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uBZ-wZ-viT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ml2-C5-wFs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xxJ-Si-2Ka">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_page4_4inch" translatesAutoresizingMaskIntoConstraints="NO" id="SME-Mw-PY2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkH-Qz-zzP">
+                                <rect key="frame" x="48" y="603" width="120" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PSA-Se-wVS"/>
+                                    <constraint firstAttribute="width" constant="120" id="kv9-Y5-xZg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="求职者入口" backgroundImage="btn_entrance_hl">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="applyJob" destination="agL-Ke-BDV" eventType="touchUpInside" id="SWN-eU-DZj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suS-PU-y48">
+                                <rect key="frame" x="208" y="603" width="120" height="44"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="企业入口" backgroundImage="btn_entrance">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="EnterpriseInrerface" destination="agL-Ke-BDV" eventType="touchUpInside" id="hbs-4h-L3C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="suS-PU-y48" firstAttribute="centerY" secondItem="wkH-Qz-zzP" secondAttribute="centerY" id="4o1-u5-NIv"/>
+                            <constraint firstAttribute="centerX" secondItem="suS-PU-y48" secondAttribute="leading" constant="-20" id="6gM-Vs-qND"/>
+                            <constraint firstAttribute="centerX" secondItem="wkH-Qz-zzP" secondAttribute="trailing" constant="20" id="Bws-Jq-evY"/>
+                            <constraint firstItem="suS-PU-y48" firstAttribute="height" secondItem="wkH-Qz-zzP" secondAttribute="height" id="D5j-Fj-thZ"/>
+                            <constraint firstItem="Ml2-C5-wFs" firstAttribute="top" secondItem="SME-Mw-PY2" secondAttribute="bottom" id="EC5-wj-Clt"/>
+                            <constraint firstItem="SME-Mw-PY2" firstAttribute="leading" secondItem="xxJ-Si-2Ka" secondAttribute="leading" id="F8S-bz-1Cw"/>
+                            <constraint firstItem="suS-PU-y48" firstAttribute="leading" secondItem="wkH-Qz-zzP" secondAttribute="trailing" constant="25" id="Ff2-sX-mWY"/>
+                            <constraint firstAttribute="trailing" secondItem="SME-Mw-PY2" secondAttribute="trailing" id="Oam-sg-Tzx"/>
+                            <constraint firstItem="SME-Mw-PY2" firstAttribute="top" secondItem="xxJ-Si-2Ka" secondAttribute="top" id="VE4-wa-hD8"/>
+                            <constraint firstAttribute="centerX" secondItem="suS-PU-y48" secondAttribute="leading" constant="30" id="fDX-45-Smp"/>
+                            <constraint firstItem="suS-PU-y48" firstAttribute="width" secondItem="wkH-Qz-zzP" secondAttribute="width" id="sjc-tK-7Ai"/>
+                            <constraint firstAttribute="bottom" secondItem="wkH-Qz-zzP" secondAttribute="bottom" constant="20" id="uYh-Xu-k1M"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ff2-sX-mWY"/>
+                                <exclude reference="fDX-45-Smp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHm-t0-Xdy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-661.5" y="150.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_entrance" width="123" height="44"/>
+        <image name="btn_entrance_hl" width="123" height="44"/>
+        <image name="welcome_page4_4inch" width="320" height="568"/>
+    </resources>
+</document>
